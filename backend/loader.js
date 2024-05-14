@@ -25,7 +25,7 @@ export const injest_docs = async() => {
     )
     console.log('saving...')
 
-    const directory = "/home/mahim/Development/study-helping-chat-ai/test-2-js/";
+    const directory = "E:/University Final Project/study-helping-chat-ai/backend";
     await vectorStore.save(directory);
     console.log('saved!')
 
