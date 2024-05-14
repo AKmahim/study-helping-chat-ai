@@ -43,7 +43,7 @@ app.get('/ask', async (req, res) => {
           new OpenAIEmbeddings()
           );
           
-          const question = ""; //question goes here. 
+          const question = "Summerize the pdf with 3 sentences"; //question goes here. 
           const result = await loadedVectorStore.similaritySearch(question, 1);
           const resA = await chainA.call({
             input_documents: result,
